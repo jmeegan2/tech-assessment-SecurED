@@ -37,3 +37,11 @@ if its because the hero list doesnt have a specific route its just blank
 -Im just gonna move on for now I cant seem to get it to reroute back to mainpage
 -Im just gonna restart, im not making any progress it seems 
 - Im trying to define a hero in the HeroesDB but its not showing on the heros list and I have no idea why.
+- Ive defined it in the HeroesDB.js using the correct schema but its still not working 
+           {
+            id:'1',
+            name: 'James Meegan',
+            class: 'Student',
+            level: 100
+           }
+- "The UI will display a list of hero names if you add some to the backend API using [Postman](https://www.postman.com/)." So I guess I'll only have names display if I do a post request with the API, but it doesn't save them and I have to make routing compenents so Im not sure. I guess I'll just do the post request. 

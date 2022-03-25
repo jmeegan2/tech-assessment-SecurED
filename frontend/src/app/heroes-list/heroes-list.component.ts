@@ -9,7 +9,13 @@ import { Hero } from '../types/Hero';
 })
 export class HeroesListComponent implements OnInit {
 
-  heroes: Hero[] = [];
+  heroes: Hero[] = [
+  //  { id: "1",
+  //   name: "James Meegan",
+  //   class: "2023",
+  //   level: 3,
+  //  }
+  ];
 
   constructor(private backend: BackendService) { }
 
