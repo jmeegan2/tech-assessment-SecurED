@@ -70,3 +70,6 @@ if its because the hero list doesnt have a specific route its just blank
     "class" : "King",
     "level" : 25
 }
+# March 25 
+- Im just gonna read some documentation on angular routing for awhile and look at tour of heroes example on angular.io
+
