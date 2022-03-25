@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesListComponent,
-    HeroDetailsComponent
+    HeroDetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
