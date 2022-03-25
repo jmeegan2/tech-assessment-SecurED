@@ -75,3 +75,5 @@ if its because the hero list doesnt have a specific route its just blank
 -Created heroDetails component
 -hero details component working and I'm able to be routed from hero list to it. Still haven't displayed the specific information for each hero though
 -add link to top of hero-details.html so you can go back to heroes list by clicking on it
+-just trying to display the specific information for the hero on the hero-detail page, going through the angular documentation and following along
+-Ive almost got task one done, I just really had to read the documentation more and the angular site had a similar project to this. 
