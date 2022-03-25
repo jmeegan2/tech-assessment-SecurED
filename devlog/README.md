@@ -36,3 +36,4 @@ You can structure this devlog however you like.  You could keep one file and mar
 if its because the hero list doesnt have a specific route its just blank
 -Im just gonna move on for now I cant seem to get it to reroute back to mainpage
 -Im just gonna restart, im not making any progress it seems 
+- Im trying to define a hero in the HeroesDB but its not showing on the heros list and I have no idea why.
