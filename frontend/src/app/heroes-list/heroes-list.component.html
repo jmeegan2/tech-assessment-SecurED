@@ -2,13 +2,16 @@
 <ul>
     <!--Displays a list of hero names-->
     <li *ngFor="let hero of heroes">
-        <button type="button" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
-          <!-- <span class="badge">{{hero.id}}</span> -->
-          <span class="name">{{hero.name}}</span>
+        <button type="button" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"  >
+            
+          <span class="name">{{hero.name}}</span >
+          
         </button>
       </li>
 </ul>
 
-<p><a routerLink="/hero-details" routerLinkActive="active">Click here</a></p>
+<!-- just used to test hero-details page routing -->
+<!-- <p><a routerLink="/hero-details" routerLinkActive="active">Click here</a></p> -->
 
-<app-hero-details [hero]="selectedHero"></app-hero-details>
+<!-- this will show the data on this page If I remove the router link in the button.  -->
+<app-hero-details [hero]="selectedHero" ></app-hero-details>

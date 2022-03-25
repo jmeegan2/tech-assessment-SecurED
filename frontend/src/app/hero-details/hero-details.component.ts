@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router'
 import { Hero } from '../types/Hero';
+import { HeroesListComponent } from '../heroes-list/heroes-list.component';
 
 @Component({
   selector: 'app-hero-details',
