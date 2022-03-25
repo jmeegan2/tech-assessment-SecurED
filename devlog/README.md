@@ -45,3 +45,28 @@ if its because the hero list doesnt have a specific route its just blank
             level: 100
            }
 - "The UI will display a list of hero names if you add some to the backend API using [Postman](https://www.postman.com/)." So I guess I'll only have names display if I do a post request with the API, but it doesn't save them and I have to make routing compenents so Im not sure. I guess I'll just do the post request. 
+- Post Request using postman. Heroes I'll be using: 
+{
+  "id" : "1",
+  "name": "Wonder Woman",
+  "class": "Monk/Fighter",
+  "level": 100
+},
+{
+    "id" : "2",
+    "name" : "Superman",
+    "class" : "Cleric",
+    "level" : 101
+},
+{
+    "id" : "3",
+    "name" : "Spider-man",
+    "class" : "Working class",
+    "level" : 50
+},
+{
+    "id" : "4",
+    "name" : "Aquaman",
+    "class" : "King",
+    "level" : 25
+}
