@@ -5,6 +5,7 @@ import { HeroDetailsComponent } from './hero-details/hero-details.component';
 
 const routes: Routes = [
   { path: '', component: HeroesListComponent },
+  { path: 'hero-details', component: HeroDetailsComponent}
 ];
 
 @NgModule({
