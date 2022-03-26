@@ -77,10 +77,10 @@ if its because the hero list doesnt have a specific route its just blank
 -add link to top of hero-details.html so you can go back to heroes list by clicking on it
 -just trying to display the specific information for the hero on the hero-detail page, going through the angular documentation and following along
 -Ive almost got task one done, I just really had to read the documentation more and the angular site had a similar project to this that I refrenced. 
--Having trouble getting the data to show up on different page, but if I use "<app-hero-details [hero]="selectedHero" ></app-hero-details>" at the bottom of hero-list.components.html. Im not sure why its not transferring the information over to the new page when I click on the name and it takes me to new page.
+-Having trouble getting the data to show up on different page, but if I use "<app-hero-details [hero]="selectedHero" ></app-hero-details>" at the bottom of hero-list it displays the details. Im not sure why its not transferring the information over to the new page when I click on the name.
 -Im just gonna move on for now and set up the wildcard route then go to task 2. I'll come back to this later, its almost done. 
 -Setup wildcard/404 route, going to the redirect now. Not sure how I'll trigger an error statement to display after being redirected back to hero-list page
 -I got the redirect to work and tested it with /hero-details also and it worked, now I need to trigger an error message to display
 
 # March 26
-- Im stuck on trying to get my details to display on a different page and Im not sure how to go about displaying the service message. For the displaying hero details on different page Im pretty sure it has to do with two way binding. 
+- Im stuck on trying to get my details to display on a different page and Im not sure how to go about displaying the error message. For the displaying hero details on different page Im pretty sure it has to do with two way binding. 
