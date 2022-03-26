@@ -84,3 +84,4 @@ if its because the hero list doesnt have a specific route its just blank
 
 # March 26
 - Im stuck on trying to get my details to display on a different page and Im not sure how to go about displaying the error message. For the displaying hero details on different page Im pretty sure it has to do with two way binding. 
+- Created hero form from reading documentation on angular site https://angular.io/guide/forms
