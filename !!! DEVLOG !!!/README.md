@@ -81,3 +81,6 @@ if its because the hero list doesnt have a specific route its just blank
 -Im just gonna move on for now and set up the wildcard route then go to task 2. I'll come back to this later, its almost done. 
 -Setup wildcard/404 route, going to the redirect now. Not sure how I'll trigger an error statement to display after being redirected back to hero-list page
 -I got the redirect to work and tested it with /hero-details also and it worked, now I need to trigger an error message to display
+
+# March 26
+- Im stuck on trying to get my details to display on a different page and Im not sure how to go about displaying the service message. For the displaying hero details on different page Im pretty sure it has to do with two way binding. 
