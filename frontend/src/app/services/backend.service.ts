@@ -20,7 +20,7 @@ export class BackendService {
   }
 
   //Creates new hero and adds to database 
-  @param hero 
+  // @param hero 
 
-  createHero
+  // createHero
 }
