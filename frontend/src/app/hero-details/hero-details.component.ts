@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router'
+import { ActivatedRoute } from '@angular/router'
 import { Hero } from '../types/Hero';
-import { HeroesListComponent } from '../heroes-list/heroes-list.component';
 
 @Component({
   selector: 'app-hero-details',
@@ -19,12 +18,6 @@ export class HeroDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // OR
-  
-  // ngOnInit() {
-  //   this.route.queryParams.subscribe(params => {
-  //     this.name = params['name'];
-  //   });
-  // }
+
 
 }
