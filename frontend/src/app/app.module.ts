@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CreateHeroComponent } from './create-hero/create-hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesListComponent,
     HeroDetailsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CreateHeroComponent
   ],
   imports: [
     BrowserModule,

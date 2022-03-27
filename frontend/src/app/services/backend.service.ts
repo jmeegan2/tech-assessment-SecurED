@@ -18,4 +18,9 @@ export class BackendService {
   getHeroes(): Promise<Hero[]> {
     return this.http.get<Hero[]>(`${environment.api}/heroes`).toPromise();
   }
+
+  //Creates new hero and adds to database 
+  @param hero 
+
+  createHero
 }

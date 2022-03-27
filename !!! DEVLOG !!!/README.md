@@ -84,3 +84,5 @@ if its because the hero list doesnt have a specific route its just blank
 
 # March 26
 - Im stuck on trying to get my details to display on a different page and Im not sure how to go about displaying the error message. For the displaying hero details on different page Im pretty sure it has to do with two way binding. I read the documentation on parent and child components but I still cant seem to figure it out. I asked a question on stackoverflow so hopefully someone can tell me how. 
+-Im gonna start task 2 and it seems like I'll need to communicate with the backend for the next three, I'll be putting some code in backend.services.ts
+- createHeroComponent made

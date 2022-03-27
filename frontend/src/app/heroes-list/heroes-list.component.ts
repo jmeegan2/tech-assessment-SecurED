@@ -25,4 +25,6 @@ export class HeroesListComponent implements OnInit {
     this.heroes = await this.backend.getHeroes();
   }
 
+  
 }
+
