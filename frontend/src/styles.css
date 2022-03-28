@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding: .5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  @media (min-width: 600px) {
+    body {
+      padding: 2rem;
+    }
+  }
+h1{
+    text-align: center;
+}
+li {
+    text-align: center;
+    font-size: 25px;
+}
+button {
+    
+    background-color: ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+   
+  }
+  /* button:hover {
+  
+  color: white;
+  align-content: center;
+} */
+a {
+    color:black;
+    text-decoration: none;
+}
