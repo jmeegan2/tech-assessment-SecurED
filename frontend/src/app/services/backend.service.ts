@@ -42,8 +42,12 @@ export class BackendService {
   //     this.createHero(hero);
   // }
   
-  
-  updateAHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
+  async getTheHero(heroId: string | null): Promise<Hero>{
+    return this.http.get<Hero>(`${environment.api}/heroes/${heroId}`).toPromise();
+  }
+
+  //Havent even implemented yet
+  updateTheHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
     return this.http.patch<Hero>(`${environment.api}/heroes/${heroId}`, partialHero).toPromise();
   }
 }

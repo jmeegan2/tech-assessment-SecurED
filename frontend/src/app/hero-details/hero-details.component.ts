@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { Hero } from '../types/Hero';
+import { BackendService } from '../services/backend.service';
 
 @Component({
   selector: 'app-hero-details',
@@ -8,15 +9,24 @@ import { Hero } from '../types/Hero';
   styleUrls: ['./hero-details.component.css']
 })
 export class HeroDetailsComponent implements OnInit {
-  @Input() hero: Hero | undefined;
-  
+  hero: Hero | undefined;
+  name:string | null = '';
+  id: string | null = '';
 
   constructor(
     private route: ActivatedRoute,
-  ) { }
+    private backend: BackendService,
+  ) {}
 
   ngOnInit(): void {
+    this.getHero();
   }
+
+  async getHero(): Promise<void>{
+    this.id = this.route.snapshot.paramMap.get("id"), 10;
+    this.hero = await this.backend.getTheHero(this.id);
+}
+
 
 
 

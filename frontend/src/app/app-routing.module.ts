@@ -9,7 +9,7 @@ import { UpdateHeroComponent } from './update-hero/update-hero.component';
 const routes: Routes = [
   { path: '', component: HeroesListComponent },
   //This is the route for displaying hero details/info
-  { path: 'hero-details', component: HeroDetailsComponent },
+  { path: 'detail/:id', component: HeroDetailsComponent },
   { path: 'create-hero', component: CreateHeroComponent},
   { path: 'update-hero', component: UpdateHeroComponent},
   

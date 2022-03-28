@@ -1,13 +1,11 @@
 <h1>Hero List</h1>
 <ul>
-    <!--Displays a list of hero names-->
-    <li *ngFor="let hero of heroes">
-        <button type="button" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"  >
-            
-          <span class="name">{{hero.name}}</span >
-          
-        </button>
-      </li>
+  <li *ngFor="let hero of heroes">
+    <!-- this was on the tutorial, I had to change my routing path to make it work-->
+    <a routerLink="/detail/{{hero.id}}">{{hero.name}}</a>
+   
+  </li>
+  
 </ul>
 
 <button>
@@ -22,4 +20,3 @@
 
 
 <!-- this will show the data on this page-->
-<app-hero-details [hero]="selectedHero" ></app-hero-details>
