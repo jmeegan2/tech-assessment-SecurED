@@ -1,12 +1,12 @@
 <h1>Hero List</h1>
-<ul>
-  <li *ngFor="let hero of heroes">
+
+  <p *ngFor="let hero of heroes" class="heroList">
     <!-- this was on the tutorial, I had to change my routing path to make it work-->
     <a routerLink="/detail/{{hero.id}}">{{hero.name}}</a>
 
-  </li>
+  </p>
 
-</ul>
+
 
 <button>
   <a routerLink="/create-hero">Create New Hero</a>
