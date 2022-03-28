@@ -11,7 +11,7 @@ const routes: Routes = [
   //This is the route for displaying hero details/info
   { path: 'hero-details', component: HeroDetailsComponent },
   { path: 'create-hero', component: CreateHeroComponent},
-  { path: 'update-hero', component: UpdateHeroComponent}
+  { path: 'update-hero', component: UpdateHeroComponent},
   
   /*I couldnt make the path blank because thats the path for heroesList so 
   I just did ** and it works. I tested it with /hero-details too and it works */
