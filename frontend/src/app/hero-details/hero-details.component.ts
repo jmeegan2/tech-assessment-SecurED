@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { Hero } from '../types/Hero';
 import { BackendService } from '../services/backend.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-details',
@@ -16,6 +17,7 @@ export class HeroDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private backend: BackendService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -27,7 +29,11 @@ export class HeroDetailsComponent implements OnInit {
     this.hero = await this.backend.getTheHero(this.id);
 }
 
-
+delete(hero: Hero): void {
+  // this.heroes = this.heroes.filter(h => h !== hero);
+  this.backend.deleteHero(String(this.id));;
+  this.router.navigate(['/']); //main page
+}
 
 
 }

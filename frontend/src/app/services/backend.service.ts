@@ -46,6 +46,10 @@ export class BackendService {
     return this.http.get<Hero>(`${environment.api}/heroes/${heroId}`).toPromise();
   }
 
+  async deleteHero(heroId: string): Promise<Hero>{
+    return this.http.delete<Hero>(`${environment.api}/heroes/${heroId}`).toPromise();
+  }
+
   //Havent even implemented yet
   updateTheHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
     return this.http.patch<Hero>(`${environment.api}/heroes/${heroId}`, partialHero).toPromise();

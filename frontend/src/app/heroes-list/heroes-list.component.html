@@ -3,20 +3,12 @@
   <li *ngFor="let hero of heroes">
     <!-- this was on the tutorial, I had to change my routing path to make it work-->
     <a routerLink="/detail/{{hero.id}}">{{hero.name}}</a>
-   
+
   </li>
-  
+
 </ul>
 
 <button>
   <a routerLink="/create-hero">Create New Hero</a>
-  
+
 </button>
-<!-- just used to test hero-details page routing -->
-<!-- <p><a routerLink="/hero-details" routerLinkActive="active">Click here</a></p> -->
-
-<!-- just used to test 404/wildcard page routing -->
-<!-- <p><a routerLink="/fakeLink" routerLinkActive="active">Click here</a></p> -->
-
-
-<!-- this will show the data on this page-->
