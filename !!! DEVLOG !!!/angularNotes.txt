@@ -1,3 +1,7 @@
+-Links Used:
+https://angular.io/guide/template-syntax
+
+
 - The param() method creates a serialized representation of an array or an object. 
 The serialized values can be used in the URL query string when making an AJAX request.
 

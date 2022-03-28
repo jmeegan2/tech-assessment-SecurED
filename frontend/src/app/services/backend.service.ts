@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Hero } from '../types/Hero';
-
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class BackendService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private router: Router ,private http: HttpClient) { }
 
   /**
    * Gets a list of heroes from the backend API
@@ -19,8 +19,14 @@ export class BackendService {
     return this.http.get<Hero[]>(`${environment.api}/heroes`).toPromise();
   }
 
-  //Creates new hero and adds to database 
-  // @param hero 
+/**
+   * 
+   * 
+   * @param hero // create hero
+   */
+      createTheHero(hero: Hero): Promise<Hero>{
+        return this.http.post<Hero>(`${environment.api}/heroes`, hero).toPromise();
+      }
 
-  // createHero
+  
 }

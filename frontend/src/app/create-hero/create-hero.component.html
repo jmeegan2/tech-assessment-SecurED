@@ -1,4 +1,22 @@
-<p>create-hero works!</p>
+<!-- <body>
+  <form>
+  
+    <!-- id not needed  -->
+  
+    <!-- <label>Name:</label><br> <input type="text" #heroName (change)="addName(heroName.value)">
+    <br><br>
+  
+    <label>Class:</label><br> <input type="text" #heroClass (change)="addClass(heroClass.value)">
+    <br><br>
+  
+    <label>Level:</label><br> <input type="number" #heroLevel (change)="addLevel(+heroLevel.value)" >
+    <br><br>
+  
+    <button (click)="routerToHeroList()">Click Here to Submit</button>
+   -->
+  
+  <!-- </form>
+</body> --> 
 
 <!-- <h2 >{{hero.name | uppercase}} Details</h2>
     
@@ -6,11 +24,26 @@
 <div><span>Level: </span>{{hero.level}}</div>
 <div><span>Class: </span>{{hero.class}}</div> -->
 
-<form>
-  <!-- <label>Name:</label><br> <input type="text" placeholder="Dr.Evil" #heroName(change) ="addName(name.value)"><br>
 
-  <label>Class:</label><br> <input type="text" placeholder="Bad Guy" #heroClass><br>
-
-  <label>level:</label><br> <input type="number" placeholder="0" > -->
-
-</form>
+  
+  <body>
+  <div>
+    <form>
+      <label for="name">Name</label>
+      <input input type="text" #heroName (change)="addName(heroName.value)" placeholder="Name..">
+  
+      <label for="class">Class</label>
+      <input type="text" #heroClass (change)="addClass(heroClass.value)" placeholder="Class..">
+  
+      <label for="level">Level</label>
+      <input type="number" #heroLevel (change)="addLevel(+heroLevel.value)" placeholder="Level..">
+    
+      <input type="submit" (click)="routerToHeroList()" value="Click Here to Submit">
+      
+    </form>
+  </div>
+  
+  </body>
+  
+  
+  

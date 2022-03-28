@@ -87,4 +87,9 @@ if its because the hero list doesnt have a specific route its just blank
 -Im gonna start task 2 and it seems like I'll need to communicate with the backend for the next three, I'll be putting some code in backend.services.ts
 - createHeroComponent made
 # March 27
--Just working through task 2, making ok progress. Been using this as a refrence https://angular.io/guide/http, I think 
+-Just working through task 2, making ok progress. Been using this as a refrence https://angular.io/guide/http, 
+-Im almost done task 2 theres just a few things that are holding me up, seems like everything right but its not actually sending the data to the backend.
+- Its sending data now but its sending it twice for some reason
+- I got it to work, Im not sure why it was sending it twice but its no longer
+-Im gonna do a little css and may come back and add to it.
+-I just styled it as a normal form, Im moving on to task 3
