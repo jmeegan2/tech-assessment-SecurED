@@ -30,9 +30,11 @@ export class HeroDetailsComponent implements OnInit {
 }
 
 delete(hero: Hero): void {
-  // this.heroes = this.heroes.filter(h => h !== hero);
-  this.backend.deleteHero(String(this.id));;
-  this.router.navigate(['/']); //main page
+  if(confirm("Are you sure you want to delete the Hero?")) {
+    this.backend.deleteHero(String(this.id));;
+    this.router.navigate(['/']); //main page
+  }
+  
 }
 
 

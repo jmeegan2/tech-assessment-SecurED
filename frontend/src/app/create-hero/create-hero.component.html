@@ -1,6 +1,7 @@
   <body>
   <div>
     <form>
+      <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
       <label for="name">Name</label>
       <input input type="text" #heroName (change)="addName(heroName.value)" placeholder="Name..">
   

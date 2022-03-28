@@ -6,24 +6,25 @@ body {
     padding: .5rem;
     max-width: 1000px;
     margin: auto;
+    height: 10px;
   }
-  @media (min-width: 600px) {
-    body {
-      padding: 2rem;
-    }
-  }
+ 
+  
 h1{
+  font-size: 40px;
+  color: black;
     text-align: center;
 }
 li {
-    text-align: center;
-    font-size: 25px;
+    
+    font-size: 35px;
 }
 button {
-    
-    background-color: #5E90F5;
-    border: none;
+   font-weight: 550;
     border-radius: 4px;
+    background-color: #24a0ed;
+    border: solid;
+    border-width: 1.5px;
     cursor: pointer;
     color: black;
     font-size: 1.2rem;
@@ -31,7 +32,7 @@ button {
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-   
+   width: 100%;
   }
   /* button:hover {
   
@@ -43,11 +44,10 @@ a {
     text-decoration: none;
 }
 
-p.heroList{
-  font-size: 32px;
-  text-align: center;
-  line-height: 35px;
-  border-style:solid;
- border-color:#287EC7;
 
+#deleteButton {
+  background-color:#FF0000 ;
+}
+#heroDetails {
+  font-size: 20px;
 }
