@@ -93,3 +93,6 @@ if its because the hero list doesnt have a specific route its just blank
 - I got it to work, Im not sure why it was sending it twice but its no longer
 -Im gonna do a little css and may come back and add to it.
 -I just styled it as a normal form, Im moving on to task 3
+
+# March 28
+- Im gonna create the component for updating hero

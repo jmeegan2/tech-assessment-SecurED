@@ -28,5 +28,24 @@ export class BackendService {
         return this.http.post<Hero>(`${environment.api}/heroes`, hero).toPromise();
       }
 
+  //for refrence 
+  //   /**
+  //    * Updates a hero by id in the database
+  //    * 
+  //    * @param {string} id The id of the hero to update
+  //    * @param {Partial<Hero>} heroUpdates A partial hero object
+  //    */
+  //    updateHero(id, heroUpdates) {
+  //     const hero = this.getHero(id);
+  //     this.deleteHero(id);
+  //     hero.updateHero(heroUpdates);
+  //     this.createHero(hero);
+  // }
   
+   updateHero(heroid: string):Partial<Hero>): Promise<Hero>{
+    return this.http.post<Hero>(`${environment.api}/heroes/,${heroId}`).toPromise();
+  }
+  updateAHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
+    return this.http.patch<Hero>(`${environment.api}/heroes/${heroId}`, partialHero).toPromise();
+  }
 }
