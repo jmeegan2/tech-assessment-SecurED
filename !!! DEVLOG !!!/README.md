@@ -97,9 +97,9 @@ if its because the hero list doesnt have a specific route its just blank
 # March 28
 - Im gonna skip task 3 for now and just do the delete hero task, Going to use the tutorial on https://angular.io/tutorial/toh-pt6 as a guide. They implemented similar functionality.
 - I got sidetracked but I was able to get the hero-details to display on the other page, the tutorial showed me how I just had to change heroService to backendService and a few other small things to make it work.I'll go back and implement the error handling if I have time. 
-
 - I was able to implement the delete hero functionality. Went pretty smoothly used the tutorial as a template.
 - Added popup confirmation for the delete button
 -Styling it up somewhat atmm, I was trying to implement a gif but it wasnt working
 -Im gonna try task 3 updating hero
+-
 
