@@ -44,7 +44,7 @@ if its because the hero list doesnt have a specific route its just blank
             class: 'Student',
             level: 100
            }
-- "The UI will display a list of hero names if you add some to the backend API using [Postman](https://www.postman.com/)." So I guess I'll only have names display if I do a post request with the API, but it doesn't save them and I have to make routing compenents so Im not sure. I guess I'll just do the post request. 
+- "The UI will display a list of hero names if you add some to the backend API using [Postman](https://www.postman.com/)." So I guess I'll only have names display if I do a post request with the API, but it doesn't save them and I have to make routing compenents so Im not sure. I guess I'll just do the post request.(Update 3/28: I thought i was gonna have to create routing components for each one and didn't realize I could just do one for all the heroes details)
 - Post Request using postman. Heroes I'll be using: 
 {
   "id" : "1",
@@ -101,5 +101,5 @@ if its because the hero list doesnt have a specific route its just blank
 - Added popup confirmation for the delete button
 -Styling it up somewhat atmm, I was trying to implement a gif but it wasnt working
 -Im gonna try task 3 updating hero
-- Done for the four task for the frontend for the most part, I still havent implemented 
-a error message for not finding a hero though. 
+- Done the four task for the frontend for the most part, I still havent implemented a error message for not finding a hero though. 
+- I would start the backend tasks but its 11:37pm so I have to turn it in.

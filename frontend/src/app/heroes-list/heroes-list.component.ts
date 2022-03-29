@@ -9,7 +9,7 @@ import { Hero } from '../types/Hero';
 })
 export class HeroesListComponent implements OnInit {
 
-  // Didn't have to anything here I don't think 
+  // Didn't have to do anything here I don't think 
 
   heroes: Hero[] = [
   ];
