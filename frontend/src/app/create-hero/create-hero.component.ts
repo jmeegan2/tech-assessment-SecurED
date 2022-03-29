@@ -32,7 +32,7 @@ export class CreateHeroComponent implements OnInit {
      * 
      * @param heroLevel 
      */
-  addLevel(heroLevel: number): void {
+  addHeroLevel(heroLevel: number): void {
     this.createNewHero.level = heroLevel;
   }
 
@@ -42,7 +42,7 @@ export class CreateHeroComponent implements OnInit {
    * @param heroName 
    */
 
-  addName(heroName: string): void {
+  addHeroName(heroName: string): void {
     this.createNewHero.name = heroName;
 
   }
@@ -52,7 +52,7 @@ export class CreateHeroComponent implements OnInit {
    * @param heroClass 
    */
 
-  addClass(heroClass: string): void {
+  addHeroClass(heroClass: string): void {
     this.createNewHero.class = heroClass;
 
   }

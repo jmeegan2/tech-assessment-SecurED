@@ -3,13 +3,13 @@
     <form>
       <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
       <label for="name">Name</label>
-      <input input type="text" #heroName (change)="addName(heroName.value)" placeholder="Name.." required/>
+      <input input type="text" #heroName (change)="addHeroName(heroName.value)" placeholder="Name.." required/>
   
       <label for="class">Class</label>
-      <input type="text" #heroClass (change)="addClass(heroClass.value)" placeholder="Class.." required/>
+      <input type="text" #heroClass (change)="addHeroClass(heroClass.value)" placeholder="Class.." required/>
   
       <label for="level">Level</label>
-      <input type="number" #heroLevel (change)="addLevel(+heroLevel.value)" placeholder="Level.." required/>
+      <input type="number" #heroLevel (change)="addHeroLevel(+heroLevel.value)" placeholder="Level.." required/>
     
       <input type="submit" (click)="routerToHeroList()" value="Click Here to Submit">
       

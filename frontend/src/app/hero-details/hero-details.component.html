@@ -1,7 +1,6 @@
 <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
 <div *ngIf="hero">
 
-
   <!-- the hero details that will be displayed upon clicking on name  -->
 
   <div id="heroDetails">
@@ -14,4 +13,5 @@
   <button id="deleteButton" (click)="delete(hero)">Delete this Hero</button>
 
   <a routerLink="/update-hero/{{hero.id}}"><button id="updateButton">Update Hero</button></a>
+  
 </div>

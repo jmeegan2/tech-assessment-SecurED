@@ -24,8 +24,7 @@ export class HeroDetailsComponent implements OnInit {
     this.getHero();
   }
 
-
-// gets the specific hero from the backend
+  // gets the specific hero from the backend
 
   async getHero(): Promise<void> {
     this.id = this.route.snapshot.paramMap.get("id");
@@ -41,6 +40,4 @@ export class HeroDetailsComponent implements OnInit {
     }
 
   }
-
-
 }
