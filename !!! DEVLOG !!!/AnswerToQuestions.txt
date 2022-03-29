@@ -1,0 +1,21 @@
+1. What do you enjoy the most about software development?
+A1 :
+    There are multiple parts that I enjoy about software development. The most import one to me is that fact 
+that I will be able to learn constantly throughout my career and there will never be a shortage of 
+interesting technologies that I can become apart of. The second thing I enjoy most about software is 
+its challenging and very fullfilling once you complete a hard task/assignment that seemed almost 
+impossible in the beginning. The third thing I enjoy is the fact that there will always be new 
+software created that will change the world and impact people in ways never thought of before.
+There's also the obvious good career opportunities, good pay, not hard on the body, and many more. 
+
+2. Describe your ideal career progression, if there were no limitations.
+A2: 
+    My ideal career progression would be graduating from college and landing a software development 
+    position, I would prefer it be in the frontend or frontend related development since that is What
+    I've been focusing on for the past year. I may work at other companies, maybe try to get into 
+    a FAANG company. My ultimate goal would be to start my own company that is software related, truthfully
+    I'm not quite sure what that would entail. I need to find a way to bring value to consumers that others
+    are not already doing or do it better than the competition. So the ultimate goal is to start my own software
+    development related company. 
+
+
