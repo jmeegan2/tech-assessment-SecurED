@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
+import { Hero } from '../types/Hero';
+import { BackendService } from '../services/backend.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-update-hero',
   templateUrl: './update-hero.component.html',
@@ -7,9 +10,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateHeroComponent implements OnInit {
 
-  constructor() { }
+  @Input() hero: Partial<Hero> = {};
+  name:string | null = '';
+  id: string | null = '';
+
+  constructor(
+    private route: ActivatedRoute,
+    private backend: BackendService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
+    this.getHero();
   }
 
+  async getHero(): Promise<void>{
+    this.id = this.route.snapshot.paramMap.get("id"), 10;
+    this.hero = await this.backend.getTheHero(this.id);
 }
+updateClass(heroClass: string){
+  this.hero.class = heroClass;
+}
+updateName(heroName: string){
+  this.hero.name = heroName;
+}
+updateLevel(heroLevel: number){
+  this.hero.level = +heroLevel;
+}
+
+    async updateHero(): Promise<void>{
+  if(confirm("Has the hero been updated in the way you wanted?")) {
+  await this.backend.updateTheHero(String(this.id),this.hero);
+  this.router.navigate(['/']);
+  }
+}
+
+}
+

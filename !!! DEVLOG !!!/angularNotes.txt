@@ -1,7 +1,9 @@
 -Links Used:
 https://angular.io/guide/template-syntax
 https://angular.io/tutorial/toh-pt6
+https://stackoverflow.com/questions/44840735/change-vs-ngmodelchange-in-angular
+
 
 - The param() method creates a serialized representation of an array or an object. 
 The serialized values can be used in the URL query string when making an AJAX request.
-
+- (change) event bound to classical input change event.

@@ -1,1 +1,19 @@
-<p>update-hero works!</p>
+<a routerLink="/"><button>Click Here to go back to Hero List</button></a>
+<div *ngIf="hero">
+
+
+    <!-- the hero details that will be displayed upon clicking on name  -->
+
+
+    <div id="heroDetails">
+        <br>
+        <div><span>Name: </span>{{hero.name}}</div><br>
+        <div><span>Class: </span>{{hero.class}}</div><br>
+        <div><span>Level: </span>{{hero.level}}</div>
+    </div>
+
+    <H1>Update the Hero Below</H1>
+
+ 
+
+</div>

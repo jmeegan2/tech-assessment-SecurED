@@ -51,3 +51,6 @@ a {
 #heroDetails {
   font-size: 20px;
 }
+#updateButton {
+  background-color: Orange;
+}
