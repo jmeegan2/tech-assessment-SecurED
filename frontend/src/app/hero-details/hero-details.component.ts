@@ -16,7 +16,7 @@ export class HeroDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private backend: BackendService,
+    private backendService: BackendService,
     private router: Router
   ) {}
 
@@ -26,12 +26,12 @@ export class HeroDetailsComponent implements OnInit {
 
   async getHero(): Promise<void>{
     this.id = this.route.snapshot.paramMap.get("id"), 10;
-    this.hero = await this.backend.getTheHero(this.id);
+    this.hero = await this.backendService.getTheHero(this.id);
 }
 
 delete(hero: Hero): void {
   if(confirm("Are you sure you want to delete the Hero?")) {
-    this.backend.deleteHero(String(this.id));;
+    this.backendService.deleteHero(String(this.id));;
     this.router.navigate(['/']); //main page
   }
   

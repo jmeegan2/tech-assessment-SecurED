@@ -16,7 +16,7 @@ export class UpdateHeroComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private backend: BackendService,
+    private backendService: BackendService,
     private router: Router
   ) {}
 
@@ -26,7 +26,7 @@ export class UpdateHeroComponent implements OnInit {
 
   async getHero(): Promise<void>{
     this.id = this.route.snapshot.paramMap.get("id"), 10;
-    this.hero = await this.backend.getTheHero(this.id);
+    this.hero = await this.backendService.getTheHero(this.id);
 }
 updateClass(heroClass: string){
   this.hero.class = heroClass;
@@ -39,7 +39,7 @@ updateLevel(heroLevel: number){
 }
 
     async updateHero(): Promise<void>{
-  await this.backend.updateTheHero(String(this.id),this.hero)
+  await this.backendService.updateTheHero(String(this.id),this.hero)
   }
   routerToHeroList()
     {

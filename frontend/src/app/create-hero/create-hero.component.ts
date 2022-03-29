@@ -20,7 +20,10 @@ export class CreateHeroComponent implements OnInit {
       level: 0
     };
   
-  constructor(private backend: BackendService, private router: Router) { }
+  constructor(
+    private backendService: BackendService, 
+    private router: Router) 
+    { }
 
   ngOnInit(): void {
   }
@@ -59,7 +62,7 @@ export class CreateHeroComponent implements OnInit {
    * create the hero
    */
   async createHero() {
-    await this.backend.createTheHero(this.createNewHero);
+    await this.backendService.createTheHero(this.createNewHero);
   }
 
   // this create hero and take them back to mainpage with one click

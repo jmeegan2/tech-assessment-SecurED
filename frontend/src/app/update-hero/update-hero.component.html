@@ -1,11 +1,9 @@
 <div *ngIf="hero">
     <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
 
-    
-
-        <p>Current Name: {{hero.name}}</p>
-        <p>Current Class: {{hero.class}}</p>
-        <p>Current Class: {{hero.level}}</p>
+        <p #heroUpdate>Current Name: {{hero.name}}</p>
+        <p #heroUpdate>Current Class: {{hero.class}}</p>
+        <p #heroUpdate>Current Class: {{hero.level}}</p>
 
     <H2>Update the Hero Below</H2>
     <form>
