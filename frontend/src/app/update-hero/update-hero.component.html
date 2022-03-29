@@ -1,19 +1,25 @@
-<a routerLink="/"><button>Click Here to go back to Hero List</button></a>
 <div *ngIf="hero">
+    <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
 
+    
 
-    <!-- the hero details that will be displayed upon clicking on name  -->
+        <p>Current Name: {{hero.name}}</p>
+        <p>Current Class: {{hero.class}}</p>
+        <p>Current Class: {{hero.level}}</p>
 
+    <H2>Update the Hero Below</H2>
+    <form>
+        <label for="name">Name</label>
+        <input input type="text" #heroName (change)="updateName(heroName.value)" placeholder="Name.." required />
 
-    <div id="heroDetails">
-        <br>
-        <div><span>Name: </span>{{hero.name}}</div><br>
-        <div><span>Class: </span>{{hero.class}}</div><br>
-        <div><span>Level: </span>{{hero.level}}</div>
-    </div>
+        <label for="class">Class</label>
+        <input type="text" #heroClass (change)="updateClass(heroClass.value)" placeholder="Class.." required />
 
-    <H1>Update the Hero Below</H1>
+        <label for="level">Level</label>
+        <input type="number" #heroLevel (change)="updateLevel(+heroLevel.value)" placeholder="Level.." required />
 
- 
+        <input type="submit" value="Submit" (click)="routerToHeroList()">
+
+    </form>
 
 </div>

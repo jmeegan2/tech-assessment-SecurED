@@ -39,11 +39,15 @@ updateLevel(heroLevel: number){
 }
 
     async updateHero(): Promise<void>{
-  if(confirm("Has the hero been updated in the way you wanted?")) {
-  await this.backend.updateTheHero(String(this.id),this.hero);
-  this.router.navigate(['/']);
+  await this.backend.updateTheHero(String(this.id),this.hero)
   }
-}
+  routerToHeroList()
+    {
+    if(confirm("Has the hero been updated correctly?")) {
+     this.updateHero(); //create hero
+    this.router.navigate(['/']); //main page
+     }
+    }
 
 }
 

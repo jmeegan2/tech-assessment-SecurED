@@ -63,10 +63,13 @@ export class CreateHeroComponent implements OnInit {
   }
 
   // this create hero and take them back to mainpage with one click
-  routerToHeroList() {
+  routerToHeroList()
+   {
+    if(confirm("Have all input fields been filled in?")) {
     this.createHero(); //create hero
     this.router.navigate(['/']); //main page
-
+    }
+    }
   }
-}
+
 

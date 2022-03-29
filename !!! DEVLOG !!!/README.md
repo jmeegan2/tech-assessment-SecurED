@@ -101,5 +101,5 @@ if its because the hero list doesnt have a specific route its just blank
 - Added popup confirmation for the delete button
 -Styling it up somewhat atmm, I was trying to implement a gif but it wasnt working
 -Im gonna try task 3 updating hero
--
+- 
 
