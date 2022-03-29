@@ -19,20 +19,29 @@ export class CreateHeroComponent implements OnInit {
       class: "",
       level: 0
     };
-  
+
   constructor(
-    private backendService: BackendService, 
-    private router: Router) 
-    { }
+    private backendService: BackendService,
+    private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  /**
+     * level is added to the hero
+     * 
+     * @param heroLevel 
+     */
+  addLevel(heroLevel: number): void {
+    this.createNewHero.level = heroLevel;
+  }
+
   /**
    * name is added to the hero
    * 
-   * @param heroName Name of the hero
+   * @param heroName 
    */
-  
+
   addName(heroName: string): void {
     this.createNewHero.name = heroName;
 
@@ -40,39 +49,25 @@ export class CreateHeroComponent implements OnInit {
   /**
    * class is added to the hero
    * 
-   * @param heroClass Class of the hero
+   * @param heroClass 
    */
-  
+
   addClass(heroClass: string): void {
     this.createNewHero.class = heroClass;
 
   }
 
-  /**
-   * level is added to the hero
-   * 
-   * @param heroLevel 
-   */
-  addLevel(heroLevel: number): void {
-    this.createNewHero.level = heroLevel;
-
-  }
-
-  /**
-   * create the hero
-   */
   async createHero() {
     await this.backendService.createTheHero(this.createNewHero);
   }
 
-  // this create hero and take them back to mainpage with one click
-  routerToHeroList()
-   {
-    if(confirm("Have all input fields been filled in?")) {
-    this.createHero(); //create hero
-    this.router.navigate(['/']); //main page
-    }
+  // this creates the hero and takes them back to mainpage with one click
+  routerToHeroList() {
+    if (confirm("Have all input fields been filled in?")) {
+      this.createHero(); //create hero
+      this.router.navigate(['/']); //main page
     }
   }
+}
 
 

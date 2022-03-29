@@ -11,31 +11,36 @@ import { Router } from '@angular/router';
 })
 export class HeroDetailsComponent implements OnInit {
   hero: Hero | undefined;
-  name:string | null = '';
+  name: string | null = '';
   id: string | null = '';
 
   constructor(
     private route: ActivatedRoute,
     private backendService: BackendService,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.getHero();
   }
 
-  async getHero(): Promise<void>{
-    this.id = this.route.snapshot.paramMap.get("id"), 10;
-    this.hero = await this.backendService.getTheHero(this.id);
-}
 
-delete(hero: Hero): void {
-  if(confirm("Are you sure you want to delete the Hero?")) {
-    this.backendService.deleteHero(String(this.id));;
-    this.router.navigate(['/']); //main page
+// gets the specific hero from the backend
+
+  async getHero(): Promise<void> {
+    this.id = this.route.snapshot.paramMap.get("id");
+    this.hero = await this.backendService.getTheHero(this.id);
   }
-  
-}
+
+  //this will delete the hero and ask a confirmation before hand
+
+  delete(hero: Hero): void {
+    if (confirm("Are you sure you want to delete the Hero?")) {
+      this.backendService.deleteHero(String(this.id));;
+      this.router.navigate(['/']); //main page
+    }
+
+  }
 
 
 }

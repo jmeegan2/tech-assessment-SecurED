@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router'
 import { Hero } from '../types/Hero';
 import { BackendService } from '../services/backend.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-update-hero',
   templateUrl: './update-hero.component.html',
@@ -24,24 +25,39 @@ export class UpdateHeroComponent implements OnInit {
     this.getHero();
   }
 
+  //  So I decided to display the hero details while the user updated so
+  //  they would see what they were changing in real time 
+  //  I just took this from hero-details component, thats what I used
+  // this function for
+
   async getHero(): Promise<void>{
     this.id = this.route.snapshot.paramMap.get("id"), 10;
     this.hero = await this.backendService.getTheHero(this.id);
 }
-updateClass(heroClass: string){
+//The three functions below are responsible for updating the hero with
+//the new class, name, and level.
+
+updatedClassValue(heroClass: string){
   this.hero.class = heroClass;
 }
-updateName(heroName: string){
+updatedNameValue(heroName: string){
   this.hero.name = heroName;
 }
-updateLevel(heroLevel: number){
+updatedLevelValue(heroLevel: number){
   this.hero.level = +heroLevel;
 }
+
+//Responsible for updating the hero and sending the data to the backend 
 
     async updateHero(): Promise<void>{
   await this.backendService.updateTheHero(String(this.id),this.hero)
   }
+
+  // This is what I use to run the updateHero function and take me back
+  // to the main page on click of the button
+
   routerToHeroList()
+
     {
     if(confirm("Has the hero been updated correctly?")) {
      this.updateHero(); //create hero

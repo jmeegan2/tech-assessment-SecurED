@@ -1,7 +1,8 @@
--Links Used:
+-Links:
 https://angular.io/guide/template-syntax
 https://angular.io/tutorial/toh-pt6
 https://stackoverflow.com/questions/44840735/change-vs-ngmodelchange-in-angular
+https://angular.io/guide/router-tutorial-toh
 
 
 - The param() method creates a serialized representation of an array or an object. 

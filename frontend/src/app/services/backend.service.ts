@@ -27,30 +27,23 @@ export class BackendService {
       createTheHero(hero: Hero): Promise<Hero>{
         return this.http.post<Hero>(`${environment.api}/heroes`, hero).toPromise();
       }
-
-  //for refrence 
-  //   /**
-  //    * Updates a hero by id in the database
-  //    * 
-  //    * @param {string} id The id of the hero to update
-  //    * @param {Partial<Hero>} heroUpdates A partial hero object
-  //    */
-  //    updateHero(id, heroUpdates) {
-  //     const hero = this.getHero(id);
-  //     this.deleteHero(id);
-  //     hero.updateHero(heroUpdates);
-  //     this.createHero(hero);
-  // }
   
+  //Responsible for actually getting a specific hero from the backend 
+
   async getTheHero(heroId: string | null): Promise<Hero>{
     return this.http.get<Hero>(`${environment.api}/heroes/${heroId}`).toPromise();
   }
+
+  //This will be responsible for deleting the hero once we hit submit 
+  // and confirm on the front end
 
   async deleteHero(heroId: string): Promise<Hero>{
     return this.http.delete<Hero>(`${environment.api}/heroes/${heroId}`).toPromise();
   }
 
-  //Havent even implemented yet
+  
+  //This will be responsible for updating the hero once we hit submit on the front end
+
   updateTheHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
     return this.http.patch<Hero>(`${environment.api}/heroes/${heroId}`, partialHero).toPromise();
   }

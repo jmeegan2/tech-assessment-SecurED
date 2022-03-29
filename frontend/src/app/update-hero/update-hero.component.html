@@ -6,15 +6,18 @@
         <p #heroUpdate>Current Class: {{hero.level}}</p>
 
     <H2>Update the Hero Below</H2>
+
+    <!-- this is just a generic form I found online and used to submit my updated hero data -->
+
     <form>
         <label for="name">Name</label>
-        <input input type="text" #heroName (change)="updateName(heroName.value)" placeholder="Name.." required />
+        <input input type="text" #heroName (change)="updatedNameValue(heroName.value)" placeholder="Name.." required />
 
         <label for="class">Class</label>
-        <input type="text" #heroClass (change)="updateClass(heroClass.value)" placeholder="Class.." required />
+        <input type="text" #heroClass (change)="updatedClassValue(heroClass.value)" placeholder="Class.." required />
 
         <label for="level">Level</label>
-        <input type="number" #heroLevel (change)="updateLevel(+heroLevel.value)" placeholder="Level.." required />
+        <input type="number" #heroLevel (change)="updatedLevelValue(+heroLevel.value)" placeholder="Level.." required />
 
         <input type="submit" value="Submit" (click)="routerToHeroList()">
 
