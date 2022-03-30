@@ -1,6 +1,6 @@
   <body>
-  
-    <form>
+ 
+    <div>
       <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
       <label for="name">Name</label>
       <input input type="text" #heroName (change)="addHeroName(heroName.value)" placeholder="Name.." required/>
@@ -13,8 +13,8 @@
     
       <input type="submit" (click)="routerToHeroList()" value="Click Here to Submit">
       
-    </form>
-  
+    </div>
+ 
   
   </body>
   
