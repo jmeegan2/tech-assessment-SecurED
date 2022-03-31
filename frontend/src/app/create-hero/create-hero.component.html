@@ -1,22 +1,24 @@
-  <body>
- 
-    <div>
-      <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
-      <label for="name">Name</label>
-      <input input type="text" #heroName (change)="addHeroName(heroName.value)" placeholder="Name.." required/>
-  
-      <label for="class">Class</label>
-      <input type="text" #heroClass (change)="addHeroClass(heroClass.value)" placeholder="Class.." required/>
-  
-      <label for="level">Level</label>
-      <input type="number" #heroLevel (change)="addHeroLevel(+heroLevel.value)" placeholder="Level.." required/>
+<body>
+
+  <div>
+    <a routerLink="/"><button>Click Here to go back to Hero List</button></a>
+    <label for="name">Name</label>
+
+    <!-- Angular 2 can accept both ngModel and change, they both involve input-->
+    <!-- The hash (#) declares the DOM (data object mobel) elements as variables, So basically variable declaration  -->
+    <!-- The (change) binding is listening for a DOM event called change, which will give us exactly what we’d expect in “plain JavaScript DOM” outside of the Angular system.  -->
     
-      <input type="submit" (click)="routerToHeroList()" value="Click Here to Submit">
-      
-    </div>
- 
-  
-  </body>
-  
-  
-  
+    <input input type="text" #heroName (change)="addHeroName(heroName.value)" placeholder="Name.." required />
+
+    <label for="class">Class</label>
+    <input type="text" #heroClass (change)="addHeroClass(heroClass.value)" placeholder="Class.." required />
+
+    <label for="level">Level</label>
+    <input type="number" #heroLevel (change)="addHeroLevel(+heroLevel.value)" placeholder="Level.." required />
+
+    <input type="submit" (click)="routerToHeroList()" value="Click Here to Submit">
+
+  </div>
+
+
+</body>

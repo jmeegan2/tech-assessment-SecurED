@@ -29,7 +29,13 @@ export class CreateHeroComponent implements OnInit {
 
   /**
      * level is added to the hero
+     * The variable #heroLevel on the html page is listening for the (change) input and going to add the
+     * value using this function to the createNewHero model we have, that will then get 
+     * uploaded to the backend and show up on our list when createHero function is executed
      * 
+     * The this keyword is refering to an object. So in this case its referring to the object createNewHero
+     * defined above as a blank hero and its stating that the heroLevel input from the html page will
+     * now be assigned to the createNewHero level value.
      * @param heroLevel 
      */
   addHeroLevel(heroLevel: number): void {
@@ -38,7 +44,13 @@ export class CreateHeroComponent implements OnInit {
 
   /**
    * name is added to the hero
-   * 
+    * The variable #heroName on the html page is listening for the (change) input and going to add the
+     * value using this function to the createNewHero model we have, that will then get 
+     * uploaded to the backend and show up on our list when createHero function is executed
+     * 
+     * The this keyword is refering to an object. So in this case its referring to the object createNewHero
+     * defined above as a blank hero and its stating that the heroLevel input from the html page will
+     * now be assigned to the createNewHero level value.
    * @param heroName 
    */
 

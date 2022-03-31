@@ -43,6 +43,14 @@ export class BackendService {
 
   
   //This will be responsible for updating the hero once we hit submit on the front end
+  // it will send the specific hero information to the backend that has been changed
+  /*
+  Partial Constructs a type with all properties of Type set to optional. This utility will return a 
+   type that represents all subsets of a given type.
+
+   If we only want to update the Class we are able to do and not need to update the other fields 
+   We are not forced to set every property from hero interface. 
+  */
 
   updateTheHero(heroId: string, partialHero: Partial<Hero>): Promise<Hero>{
     return this.http.patch<Hero>(`${environment.api}/heroes/${heroId}`, partialHero).toPromise();

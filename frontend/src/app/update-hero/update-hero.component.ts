@@ -37,6 +37,14 @@ export class UpdateHeroComponent implements OnInit {
   //The three functions below are responsible for updating the hero with
   //the new class, name, and level.
 
+  // The variable #heroClass on the html page is listening for the (change) input in plain javascript DOM
+  // and going to add the value using this function to the hero model we have, that will then get 
+  // * uploaded to the backend and show up on our list when updateHero function is executed
+  // * 
+  // * The this keyword is refering to an object. So in this case its referring to the object hero
+  // * defined above as a blank hero and its stating that the heroClass input from the html page will
+  // * now be assigned to the hero class value.
+
   updatedClassValue(heroClass: string) {
     this.hero.class = heroClass;
   }

@@ -3,14 +3,25 @@
 <body>
   <h1>Hero List</h1>
 
+  <!-- 
+    Directives are classes that add additional behavior to elements in your Angular applications. Use Angular's 
+    built-in directives to manage forms, lists, styles,
+
+    NgFor is a built-in template directive that makes it easy to iterate over something like an array the array 
+    in this case being various hero objects that store values for ID, Name, Level, Class for each hero 
+   -->
   <ul *ngFor="let hero of heroes">
 
-    <!-- this was on the tutorial, I had to change my routing path to make it work-->
+    <!-- this was on the tutorial, I had to change my routing path to make it work
+         when the user clicks on link it will take along the hero.id and this will
+         be used on the next page to display the specific hero that the user on
+         clicked on and display its details
+    -->
     <li id="heroSingle"><a routerLink="/detail/{{hero.id}}">{{hero.name}}</a></li>
 
   </ul>
 
-  <!-- takes user to the creat hero page using routerLink -->
+  <!-- takes user to the create hero page using routerLink -->
 
   <a routerLink="/create-hero"><button>Create New Hero</button></a>
 
